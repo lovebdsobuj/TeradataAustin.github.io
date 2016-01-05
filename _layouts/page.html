@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="post-ribbon"></div>
+<main class="post-main mdl-layout__content mdl-cell--12-col">
+  <div class="post-container mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+    <div class="demo-card-wide mdl-card mdl-shadow--4dp mdl-cell mdl-cell--8-col">
+      {% if page.image %}
+        <div class="mdl-card__title" style="background: url('{{site.baseurl}}/{{ page.image }}') center/cover;">
+          <h1 class="mdl-card__title-text">{{ page.title }}</h1>
+        </div>
+      {% endif %}
+      <div class="mdl-card__supporting-text">
+        <div class="mdl-color-text--grey-500">
+          {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.categories %} • {% for cat in page.categories %} {{ cat }} {% endfor %} {% endif %}
+        </div>
+        <article class="post-content">
+          <p>{{ content }}</p>
+        </article>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+  </div>
+</main>

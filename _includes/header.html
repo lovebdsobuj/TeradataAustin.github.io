@@ -1,0 +1,61 @@
+  <header class="teradata-header mdl-layout__header mdl-layout__header--waterfall">
+
+    <div class="mdl-layout__header-row">
+      <!-- Logo -->
+      <a href="{{site.baseurl}}/" class="teradata-title mdl-layout-title">
+        <img class="teradata-logo-image" src="{{site.baseurl}}/img/teradata.svg"> <span class="mdl-layout-title__text">{{ site.title }}</span>
+      </a>
+      <!-- Title -->
+
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="teradata-header-spacer mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+          {% for page in site.pages | sort:page.order %}
+          {% if page.topnav %}
+            {% if page.title %}
+              <a class="mdl-navigation__link mdl-badge" {% if page.url == "/careers/" %}data-badge="3"{% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% endif %}
+          {% endif %}
+          {% endfor %}
+      </nav>
+
+      <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-left">
+        <i class="material-icons">more_vert</i>
+      </button>
+
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
+        {% for option in site.more_vert %}
+        <li><a href="{{ option[1].link }}" class="mdl-menu__item">{{ option[1].name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </header>
+
+  <div class="teradata-drawer mdl-layout__drawer">
+    <div class="teradata-header mdl-layout__header mdl-layout__header--waterfall">
+
+      <div class="mdl-layout__header-row">
+        <!-- Logo -->
+        <span class="teradata-title mdl-layout-title">
+          <img class="teradata-logo-image" src="{{ "/img/teradata.svg" | prepend: site.baseurl }}">
+        </span>
+      </div>
+    </div>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="{{site.baseurl}}/">Home</a>
+      {% for page in site.pages %}
+        {% if page.title %}
+        <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+      <div class="teradata-drawer-separator"></div>
+      <span class="mdl-navigation__link">Recent Posts</span>
+      {% for posts in site.posts %}
+        {% if posts.title %}
+        <a class="mdl-navigation__link" href="{{ posts.url | prepend: site.baseurl }}">{{ posts.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+  </div>

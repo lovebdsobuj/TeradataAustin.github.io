@@ -1,0 +1,672 @@
+//
+// Styles custom to Teradata
+//
+/* Override flex layout for footer */
+.teradata-main {
+  height: 100%;
+}
+.post-main {
+  min-height: 75%;
+}
+
+a.mdl-layout-title {
+  color: #fff;
+  text-decoration: none;
+}
+.mdl-layout-title__text {
+  position: relative;
+  top: 5px;
+}
+
+/* override button css */
+.mdl-button--fab.mdl-button--colored,
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  color: #FFF;
+}
+
+/* Override padding on mobile */
+@media (max-width: 479px) {
+  .mdl-grid,
+  .mdl-cell--12-col, .mdl-cell--12-col-phone.mdl-cell--12-col-phone {
+    padding: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* override blockquote quotes */
+blockquote {
+  &:before,
+  &:after {
+    content: '';
+  }
+}
+
+/* Button spacing */
+.mdl-button + .mdl-button {
+  margin-left: 20px;
+}
+
+/* Large icons */
+.mdl-list-item__icon {
+  text-align: center;
+}
+.mdl-list-item__text:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  padding-bottom: 30px;
+}
+.material-icons--large {
+  font-size: 64px;
+  line-height: 100px;
+}
+.material-icons--medium {
+  font-size: 32px;
+  line-height: 80px;
+}
+.material-icons--xsmall {
+  font-size: 14px;
+}
+
+/* Select boxes */
+.mdl-textfield--select {
+  font-size: 16px;
+  select {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    line-height: 27px;
+  }
+}
+
+.listener-screen-image {
+  box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 100%;
+}
+
+/* HR color */
+hr {
+  border-top-color: rgba(0,0,0,0.12);
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: $accent-color;
+  color: #fff;
+}
+
+::selection {
+  background-color: $accent-color;
+  color: #fff;
+}
+
+.teradata-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.teradata-header {
+  color: #fff;
+  fill: #fff;
+  &.mdl-layout__header {
+    background-color: $brand-color;
+  }
+}
+
+.teradata-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.teradata-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+}
+
+.teradata-mobile-title {
+  display: none !important;
+}
+
+
+.teradata-logo-image {
+  height: 29px;
+  margin-right: 10px;
+}
+
+
+.teradata-header {
+  overflow: visible;
+}
+
+  .teradata-header .material-icons {
+    color: #FFFFFF !important;
+  }
+
+  .teradata-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #FFFFFF;
+  }
+
+  .teradata-header .mdl-navigation__link {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+
+    &.mdl-badge[data-badge]:after {
+      top: 7px;
+      right: 2px;
+    }
+  }
+
+  .teradata-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .teradata-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    justify-content: flex-end;
+    width: 800px;
+  }
+
+  .teradata-search-box.is-focused ~ .teradata-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .teradata-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .teradata-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #20ABF1;
+    }
+
+  .teradata-search-box {
+    order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .teradata-more-button {
+    order: 3;
+  }
+
+
+.teradata-drawer {
+  border-right: none;
+  .mdl-layout__header-row {
+    padding-left: 20px;
+  }
+}
+
+  .teradata-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .teradata-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .teradata-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #20ABF1;
+  }
+
+  .teradata-drawer .mdl-layout-title {
+    position: relative;
+    background: #FF9800;
+    height: 64px;
+  }
+
+    .teradata-drawer .teradata-logo {
+      position: absolute;
+      bottom: 16px;
+      width: 150px;
+      height: auto;
+    }
+
+.teradata-hero-section {
+  position: relative;
+  width: auto;
+  background-color: #f3f3f3;
+  background:#FF9800 url('../img/landing/listener-flow.png') center 60% no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  @media (max-height: 870px) {
+    height: 500px;
+  }
+  @media (min-height: 871px) and (max-height: 1090px) {
+    height: 600px;
+  }
+  @media (min-height: 1091px) {
+    height: 800px;
+  }
+}
+
+.teradata-font {
+  line-height: 1;
+  font-weight: 300;
+}
+
+.teradata-slogan {
+  font-size: 60px;
+  @media (max-height: 870px) {
+    padding-top: 60px;
+  }
+  @media (min-height: 871px) and (max-height: 1090px) {
+    padding-top: 100px;
+  }
+  @media (min-height: 1091px) {
+    padding-top: 160px;
+  }
+}
+
+.teradata-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+  margin: 0 10px;
+}
+
+.teradata-image {
+  @media (max-height: 870px) {
+    padding-top: 20px;
+  }
+  @media (min-height: 871px) and (max-height: 1090px) {
+    padding-top: 40px;
+  }
+  @media (min-height: 1091px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 899px) {
+    padding-top: 10px;
+  }
+}
+
+.teradata-action {
+  @media (max-width: 899px) {
+    padding-top: 10px;
+  }
+  @media (min-width: 900px) {
+    padding-top: 50px;
+  }
+}
+
+  .teradata-create-character a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+
+.teradata-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #FFFFFF;
+}
+
+.teradata-screens {
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.teradata-screen {
+  text-align: center;
+}
+
+.teradata-screen .teradata-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.teradata-image-link {
+  text-decoration: none;
+}
+
+.teradata-wear {
+  display: inline-block;
+  width: 120px;
+  margin-right: 32px;
+}
+
+  .teradata-wear .teradata-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.teradata-phone {
+  display: inline-block;
+  width: 120px;
+  margin-right: 48px;
+}
+
+  .teradata-phone .teradata-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.teradata-tablet {
+  display: inline-block;
+  width: 120px;
+  margin-right: 64px;
+}
+
+  .teradata-tablet .teradata-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .teradata-tablet .teradata-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.teradata-tv {
+  display: inline-block;
+  width: 120px;
+  margin-right: 80px;
+}
+
+  .teradata-tv .teradata-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.teradata-auto {
+  display: inline-block;
+  width: 120px;
+  overflow: hidden;
+}
+
+  .teradata-auto .teradata-screen-image {
+    display: block;
+    z-index: 1;
+    width: 120px;
+  }
+
+
+.teradata-listener-section {
+  position: relative;
+  background: #FFF url('../img/landing/listener-screen.png') center top no-repeat;
+}
+@media (max-width: 900px) {
+  .teradata-listener-section {
+    background-size: auto 80%;
+    height: 600px;
+  }
+}
+@media (min-width: 901px) {
+  .teradata-listener-section {
+    background-size: auto 75%;
+    height: 800px;
+  }
+}
+
+.teradata-listener-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.teradata-listener-band-text {
+  max-width: 800px;
+  padding: 24px;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+.teradata-wear-band-text p {
+  padding-top: 8px;
+}
+
+.teradata-link {
+  text-decoration: none;
+  color: #20ABF1 !important;
+}
+
+  .teradata-link:hover {
+    color: #0288D1 !important;
+  }
+
+  .teradata-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.teradata-alt-link {
+  text-decoration: none;
+  color: #40C4FF !important;
+  font-size: 16px;
+}
+
+  .teradata-alt-link:hover {
+    color: #00B0FF !important;
+  }
+
+  .teradata-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.teradata-selfservice-section {
+  text-align: center;
+}
+
+.teradata-selfservice-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .teradata-selfservice-section-text p {
+    padding-top: 16px;
+  }
+
+.teradata-selfservice-section-image {
+  background: url('../img/landing/api-key-request.svg') center top no-repeat;
+  background-size: auto 100%;
+  height: 300px;
+}
+
+.teradata-tech {
+  img {
+    max-width: 100%;
+    max-height: 100px;
+  }
+}
+
+.teradata-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teradata-more-section .teradata-section-title {
+  margin-left: 12px;
+  padding-bottom: 24px;
+}
+
+.teradata-card-container {
+}
+
+  .teradata-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .teradata-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .teradata-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .teradata-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .teradata-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 48px;
+  }
+
+  .teradata-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .teradata-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+    .material-icons {
+      vertical-align: top;
+    }
+  }
+
+.teradata-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .teradata-footer a:hover {
+    color: #20ABF1;
+  }
+
+  .teradata-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .teradata-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .teradata-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .teradata-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .teradata-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.teradata-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .teradata-navigation-container {
+    display: none;
+  }
+
+  .teradata-title {
+    display: none !important;
+  }
+
+  .teradata-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .teradata-search-box.is-focused ~ .teradata-mobile-title {
+    opacity: 0;
+  }
+
+  .teradata-more-button {
+    display: none;
+  }
+
+  .teradata-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .teradata-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .teradata-hero-section {
+    height: 350px;
+  }
+
+  .teradata-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 10%;
+  }
+
+  .teradata-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .teradata-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .teradata-create-character img {
+    height: 12px;
+  }
+
+  .teradata-fab {
+    display: none;
+  }
+
+  .teradata-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .teradata-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}

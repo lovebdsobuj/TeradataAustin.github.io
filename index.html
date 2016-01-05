@@ -1,0 +1,182 @@
+---
+layout: default
+---
+<div class="page-content">
+  <a name="top"></a>
+  <div class="teradata-hero-section mdl-typography--text-center">
+    <div class="teradata-font teradata-slogan">Work on a small team for a big company</div>
+    <div class="teradata-font mdl-typography--display-1 mdl-layout--large-screen-only">Advanced R&amp;D on an agile team for the Fortune 3000</div>
+    <div class="teradata-font teradata-sub-slogan">Building cloud-based, scalable software applications</div>
+    <div class="teradata-image">
+      <img width="20%" src="{{site.baseurl}}/img/landing/austin-white.svg" alt="Austin Texas"/>
+    </div>
+    <div class="teradata-action">
+
+      <a href="{{ "/careers" | prepend: site.baseurl }}" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">View Current Careers</a>
+    </div>
+
+    <a href="#screens">
+      <button class="teradata-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+        <i class="material-icons">expand_more</i>
+      </button>
+    </a>
+  </div>
+  <div class="teradata-screen-section mdl-typography--text-center">
+    <a name="screens"></a>
+    <div class="mdl-typography--display-3-color-contrast">We <i class="material-icons">favorite</i> modern tech</div>
+    <div class="teradata-tech mdl-grid">
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone">
+        <img class="teradata-screen-image" src="{{site.baseurl}}/img/landing/mesos.svg" id="mesos">
+        <div class="mdl-tooltip" for="mesos">Mesos</div>
+      </div>
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone">
+        <img class="teradata-screen-image" src="{{site.baseurl}}/img/landing/docker.svg" id="docker">
+        <div class="mdl-tooltip" for="docker">Docker</div>
+      </div>
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone">
+        <img class="teradata-screen-image" src="{{site.baseurl}}/img/landing/gopher.svg" id="golang">
+        <div class="mdl-tooltip" for="golang">Golang</div>
+      </div>
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone">
+        <img class="teradata-screen-image" src="{{site.baseurl}}/img/landing/angular.svg" id="angular">
+        <div class="mdl-tooltip" for="angular">AngularJS</div>
+      </div>
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone">
+        <img class="teradata-screen-image" src="{{site.baseurl}}/img/landing/d3.svg" id="d3">
+        <div class="mdl-tooltip" for="d3">D3.js</div>
+      </div>
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--2-col-phone">
+        <img class="teradata-screen-image" src="{{site.baseurl}}/img/landing/material.svg" id="material">
+        <div class="mdl-tooltip" for="material">Material Design</div>
+      </div>
+    </div>
+    <div class="mdl-typography--display-1-color-contrast">If you do too come join us!</div>
+
+  </div>
+  <div class="teradata-listener-section">
+    <div class="teradata-listener-band">
+      <div class="teradata-listener-band-text">
+        <div class="mdl-typography--display-2 mdl-typography--font-thin">Our latest product</div>
+        <p class="mdl-typography--headline mdl-typography--font-thin">
+          Our team built Teradata Listener, a real-time streaming application.
+        </p>
+        <p>
+          <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" href="{{ "/listener" | prepend: site.baseurl }}">
+            View Listener
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="teradata-selfservice-section-text teradata-selfservice-section">
+      <div class="mdl-typography--font-light mdl-typography--display-2-color-contrast">Current job openings</div>
+      <p class="mdl-typography--font-light mdl-typography--headline">
+        Come work with our team in the Austin Aboretum area (close to Central Austin)!
+      </p>
+    </div>
+    <div class="mdl-grid">
+      {% for post in site.posts %}
+      <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+        <div class="mdl-card__title" {% if post.image %} style="background: url('{{ post.image }}') center/cover;" {% endif %}>
+          <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+        </div>
+        <div class="mdl-card__supporting-text mdl-card__supporting-text--sub">
+          {{ post.excerpt }}
+        </div>
+        <button class="post-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="location.href='{{ post.url | prepend: site.baseurl }}'">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </button>
+        <div class="mdl-card__menu">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="post-{{ post.id }}">
+            <i class="material-icons">share</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="post-{{ post.id }}">
+            <li><a href="https://twitter.com/share?url={{ post.url | prepend: site.baseurl }}&text={{ post.title }}&via={{ site.twitter_username }}" class="mdl-menu__item">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ post.url | prepend: site.baseurl }}&title={{ post.title }}&summary=&source=" class="mdl-menu__item">LinkedIn</a></li>
+            <li><a href="https://plus.google.com/share?url={{ post.url | prepend: site.baseurl }}" class="mdl-menu__item">Google+</a></li>
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="mdl-grid">
+      <div class="section-highlight mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        <div class="section__play-btn mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone" style="background: url('{{ site.baseurl }}/img/landing/austin-team.jpg') center/cover;"></div>
+        <div class="mdl-card mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+          <div class="mdl-card__supporting-text">
+            <h4>Our Austin Team</h4>
+            <p class="mdl-color-text--grey-500">
+              Join us in beautiful Austin, TX.
+            </p>
+            If you have a passion for data and analytic technology, we want you. We think differently. We ask questions. Our work environment is fast-paced, flexible, and fun, and our commitment to excellence extends far beyond the boundaries.<br/>
+            Making a difference in the communities where we work and live is fundamental to who we are, and our employees wouldn’t have it any other way.
+          </div>
+          <div class="mdl-card__actions">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ "/about" | prepend: site.baseurl }}">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="teradata-more-section">
+    <div class="teradata-section-title mdl-typography--display-1-color-contrast">More about us</div>
+    <div class="teradata-card-container mdl-grid">
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+        <div class="mdl-card__media">
+          <img src="{{site.baseurl}}/img/landing/listener-news-1.png">
+        </div>
+        <div class="mdl-card__title">
+           <h4 class="mdl-card__title-text">Teradata Listener</h4>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <span class="mdl-typography--font-light mdl-typography--subhead">Our team's first product, a self-service real-time streaming application.</span>
+        </div>
+        <div class="mdl-card__actions">
+           <a class="teradata-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{site.baseurl}}/contact">
+             View More
+             <i class="material-icons">chevron_right</i>
+           </a>
+        </div>
+      </div>
+
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+        <div class="mdl-card__media">
+          <img src="{{site.baseurl}}/img/landing/listener-news-2.png">
+        </div>
+        <div class="mdl-card__title">
+           <h4 class="mdl-card__title-text">Cloud First</h4>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <span class="mdl-typography--font-light mdl-typography--subhead">All our new products will be driven by the cloud, APIs &amp; UX.</span>
+        </div>
+        <div class="mdl-card__actions">
+           <a class="teradata-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{site.baseurl}}/requirements">
+             View More
+             <i class="material-icons">chevron_right</i>
+           </a>
+        </div>
+      </div>
+
+      <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+        <div class="mdl-card__media">
+          <img src="{{site.baseurl}}/img/landing/listener-news-4.png">
+        </div>
+        <div class="mdl-card__title">
+           <h4 class="mdl-card__title-text">Teradata Benefits</h4>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <span class="mdl-typography--font-light mdl-typography--subhead">Operate on small deam with big benefits.</span>
+        </div>
+        <div class="mdl-card__actions">
+           <a class="teradata-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{site.baseurl}}/blog">
+             View More
+             <i class="material-icons">chevron_right</i>
+           </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

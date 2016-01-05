@@ -1,0 +1,24 @@
+# Site settings
+title: Austin
+email: support@teradata.com
+description: > # this means to ignore newlines until "baseurl:"
+  Teradata Austin is an all new advanced R&D team making all new big data software products.
+baseurl: "/pages/KL186023/teradata-austin" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: teradata
+github_username:  teradata
+
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
+
+more_vert:
+  option1:
+    name: Teradata
+    link: http://www.teradata.com
+
+# Build settings
+markdown: kramdown
+
+exclude: [ Dockerfile, Gemfile, Gemfile.lock, s3_website.yml]
