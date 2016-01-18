@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Features
-permalink: /features/
+title: Products
+permalink: /products/
 topnav: true
 image: img/pages/features.jpg
 order: 2
