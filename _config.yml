@@ -17,6 +17,9 @@ more_vert:
   option1:
     name: Teradata
     link: http://www.teradata.com
+  option2:
+    name: Teradata Careers
+    link: http://www.teradata.com/careers/
 
 # Build settings
 markdown: kramdown
