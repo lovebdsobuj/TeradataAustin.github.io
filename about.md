@@ -6,17 +6,15 @@ topnav: true
 image: img/landing/austin-team.jpg
 order: 1
 ---
-#### Data-Driven, Customer Focused
+#### Cloud First, Software Only
 
-You’ve got data. Lots of data. Human, machine, business, and interaction-generated data. And more of it becomes available every second of every day. But if you can’t find the customer and business insights within your data, it just remains untapped potential.
+Teradata is an industry leader in the big data appliances. Our team is helping to lead an all new focus for big data software the runs on the cloud, whether it's behind your firewall or not.
 
-That's where we can help.
+##### Containerized Services
 
-At Teradata, we provide end-to-end solutions and services in data warehousing, big data and analytics, and marketing applications that enable you to become a data-driven business… one that’s positioned to increase revenue, improve efficiency, and create the most compelling experience for your customers.
+Our approach is to use the latest & greatest open source software like Docker & Mesos for a container strategy for our software services.
 
-After all, your business is about your customers.
-
-So is ours.
+#### Standing on the shoulders of giants
 
 ##### Teradata by the numbers:
 
