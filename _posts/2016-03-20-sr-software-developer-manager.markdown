@@ -4,8 +4,8 @@ title:  "Sr. Software Developer Manager"
 date:   2016-03-21 13:43:18
 categories: qa
 author: Kyle Ledbetter
-image: img/posts/software-engineer.jpg
-thumb: img/posts/thumbs/software-engineer.jpg
+image: img/posts/software-manager.jpg
+thumb: img/posts/thumbs/software-manager.jpg
 ---
 Teradata Labs is looking for an established software manager with a background in building and managing reliable software in a service-oriented environment, have such software operate at high-scale and reliability with high SLA's, have a strong technical background, excellent project management skills, great communication skills, and a motivation to achieve results.
 
