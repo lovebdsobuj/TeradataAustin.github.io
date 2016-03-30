@@ -16,9 +16,6 @@ order: 3
   <div class="mdl-card mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
     <div class="mdl-card__supporting-text">
       <h4>{{ post.title }}</h4>
-      <p class="mdl-color-text--grey-500">
-        {% if post.categories %} {% for cat in post.categories %} {{ cat }} {% endfor %} {% endif %}
-      </p>
       {{ post.excerpt }}
     </div>
     <div class="mdl-card__actions">
