@@ -7,44 +7,39 @@ author: Kyle Ledbetter
 image: img/posts/frontend-dev.jpg
 thumb: img/posts/thumbs/frontend-dev.jpg
 ---
-Does this describe you? You're self-driven because you're passionate and care about your code. You enjoy social coding and feedback so you can grow as a developer. You are always on the lookout for new technologies that improve the application. You proactively drive requirements and ideas for implementing and improving features.
+We’re looking for a self-driven Senior Frontend web application engineer that cares about the overall user, developer and customer experience. You will help design, build & maintain our **open source UI Platform** built on **Angular 2.0** + **Material Design**. You will also build several of our new cloud-based data & analytical products on this platform.
 
-Description:
+Responsibilities:
 
-You share interest in web stack
-Does this describe you? You're self-driven because you're passionate and care about your code. You enjoy social coding and feedback so you can grow as a developer. You are always on the lookout for new technologies that  improve the application. You proactively drive requirements and ideas for implementing and improving features.
+- Work closely with UX designers to implement and create interactions
+- Build platform-quality code that’s well tested and reusable
+- Connect the dots between mockups & APIs
+- Collaborate with end users to ensure usability
+- Simplify complex user flows for analytical and administrative apps
 
-You'll be responsible for building out sleek web applications using Angular and leverage the Material Design spec. Your UI will be the client-facing front for a powerful REST API, and you’ll get to influence the API design. You like to research new technologies and make decisions about the best tools to solve the problem.
+Skills:
 
-You’ll spend your time working in a team of engineers who are building an entire stack of micro-services, web UIs, and APIs. Together we’re building a suite of applications that will elegantly tackle complex problems for a big data software platform. While you’re focused primarily in the web application layer you will have opportunities to influence and work with the entire stack.
-
-Skills & Requirements:
-
-We look for experience, interest, and passion. You don’t need to know all of these things, but we are looking for people who enjoy working with new technologies and are willing to put in the effort to learn them. Here are the key skills that are required for this role
-
-- Web application experience, preferably AngularJS
-- Familiarity with the Material Design spec, bonus if you have used Angular Material
-- Chart and visualization tools, particularly D3
-- Web application wrappers, such as Cordova and NW.js
-- Web application tooling and testing, such as Gulp for build tasks, Jasmine for testing, etc
-- User experience, however everyone is ultimately responsible for it
-- REST API consumption and design
-- Modern CSS knowledge, flexbox experience?
-- List education requirements
-- List years of experience years of experience with each skill.
-
-On our team (UDA = Unified Data Architecture), you'll build the  architecture for the new software products for the company that gave birth to big data. We're an extremely agile team that builds services and APIs first, which are consumed by modern apps built on cutting edge tech.
+- MVVM JavaScript Pro (Angular 1.x / 2.0, React, Ember, etc)
+- Testing suite experience (Unit tests, Browser tests, Usability tests, etc)
+- UI framework proficiency (Angular-Material, Polymer, Foundation, Bootstrap, etc)
+- RESTful API consumption and design (Build & consume services)
+- Visualization framework experience (D3.js, Highcharts, Google Charts, etc)
+- Use of build tools (Gulp, Grunt, Jenkins, etc)
+- Git & Github experience (Fork or Gitflow model)
+- Agile methodology (Scrum, Kanban, Lean)
+- Thrive in a small team & make big decisions that impact products & the platform
 
 Work Environment:
 
-- Centrally located office in the Arboretum area
-- Work from home optionally
+- Small office environment in a publicly traded company
+- Work from office & home
 - Open workstations for collaboration
 - Hangouts &amp; Slack for communication
 
 **Our total compensation approach includes a competitive base salary, 401(k), strong work/family programs, and medical, dental and disability coverage.**
 
 Teradata is an Equal Opportunity/Affirmative Action Employer and commits to hiring returning veterans.
+
 
 <a href="https://teradata.taleo.net/careersection/prof/jobdetail.ftl?job=163662" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" target="_blank">
   Apply Now
