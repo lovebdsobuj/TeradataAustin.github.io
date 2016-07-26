@@ -14,7 +14,7 @@
           {% for page in site.pages | sort:page.order %}
           {% if page.topnav %}
             {% if page.title %}
-              <a class="mdl-navigation__link mdl-badge" {% if page.url == "/careers/" %}data-badge="2"{% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              <a class="mdl-navigation__link mdl-badge" {% if page.url == "/careers/" %}data-badge="1"{% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             {% endif %}
           {% endif %}
           {% endfor %}
@@ -25,6 +25,13 @@
       </button>
 
       <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
+        {% for page in site.pages | sort:page.order %}
+        {% if page.topnav %}
+          {% if page.title %}
+            <li class="mdl-layout--small-screen-only"><a class="mdl-menu__item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endif %}
+        {% endfor %}
         {% for option in site.more_vert %}
         <li><a href="{{ option[1].link }}" class="mdl-menu__item">{{ option[1].name }}</a></li>
         {% endfor %}
