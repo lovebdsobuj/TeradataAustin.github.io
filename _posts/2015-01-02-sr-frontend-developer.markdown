@@ -11,7 +11,7 @@ We’re looking for a self-driven Senior Frontend web application engineer that 
 
 Responsibilities:
 
-- Work closely with UX designers to implement and create interactions
+- Work on an open source UI Platform and use it on enterprise products
 - Build platform-quality code that’s well tested and reusable
 - Connect the dots between mockups & APIs
 - Collaborate with end users to ensure usability
