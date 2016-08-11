@@ -7,11 +7,11 @@ author: Kyle Ledbetter
 image: img/posts/frontend-dev.jpg
 thumb: img/posts/thumbs/frontend-dev.jpg
 ---
-We’re looking for a self-driven Senior Frontend web application engineer that cares about the overall user, developer and customer experience. You will help design, build & maintain our **open source UI Platform** built on **Angular 2.0** + **Material Design**. You will also build several of our new cloud-based data & analytical products on this platform.
+We’re looking for a self-driven Senior Frontend web application engineer that cares about the overall user, developer and customer experience. You will help design, build & maintain [Covalent]({{site.baseurl}}/covalent), our **open source UI Platform** built on **Angular 2.0** + **Material Design**. You will also build several of our new cloud-based data & analytical products on this platform.
 
 Responsibilities:
 
-- Work on an open source UI Platform and use it on enterprise products
+- Work on an [open source UI Platform]({{site.baseurl}}/covalent) and use it on enterprise products
 - Build platform-quality code that’s well tested and reusable
 - Connect the dots between mockups & APIs
 - Collaborate with end users to ensure usability
