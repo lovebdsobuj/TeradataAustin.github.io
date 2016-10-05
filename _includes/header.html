@@ -14,7 +14,7 @@
           {% for page in site.pages | sort:page.order %}
           {% if page.topnav %}
             {% if page.title %}
-              <a class="mdl-navigation__link mdl-badge" {% if page.url == "/careers/" %}data-badge="1"{% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              <a class="mdl-navigation__link mdl-badge" {% if page.url == "/careers/" %}data-badge="0"{% endif %} href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
             {% endif %}
           {% endif %}
           {% endfor %}
